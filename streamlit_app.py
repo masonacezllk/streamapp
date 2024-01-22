@@ -1,5 +1,5 @@
 PACKAGES = ('pyuff','numpy')
-$$
+
 import streamlit as st
 import pyuff
 
