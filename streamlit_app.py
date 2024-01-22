@@ -1,3 +1,4 @@
+PACKAGES = ('pyuff')
 import streamlit as st
 import pyuff
 
