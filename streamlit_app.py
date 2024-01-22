@@ -1,7 +1,8 @@
-PACKAGES = ('pyuff','numpy')
+PACKAGES = ('matplotlib','numpy')
 
 import streamlit as st
 import numpy
+import matplotlib
 
 col1, col2 = st.columns(2)
 
