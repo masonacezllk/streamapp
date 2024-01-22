@@ -1,4 +1,5 @@
 import streamlit as st
+import pyuff
 
 col1, col2 = st.columns(2)
 
@@ -18,6 +19,6 @@ with col2:
 
 uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
 for uploaded_file in uploaded_files:
-    bytes_data = uploaded_file.read()
+    uff_file = pyuff.UFF(uploaded_file)
     st.write("filename:", uploaded_file.name)
-    st.write(bytes_data)
+    st.write(uff_file)
