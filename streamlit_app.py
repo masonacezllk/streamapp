@@ -1,20 +1,8 @@
-import numpy as np
 import streamlit as st
 
-with st.container(border=True):
-   check1 = st.checkbox('前排')
-   check2 = st.checkbox('中间')
-   check3 = st.checkbox('后排')
-
-with st.container(border=True):
-   check1 = st.checkbox('前排')
-   check2 = st.checkbox('中间')
-   check3 = st.checkbox('后排')
+container = st.container(border=True)
+container.write(st.checkbox("前排")
 st.write("This is outside the container")
 
-if check1:
-    st.write('前排!')
-if check2:
-    st.write('中间!')
-if check3:
-    st.write('后排!')
+# Now insert some more in the container
+container.write("This is inside too")
