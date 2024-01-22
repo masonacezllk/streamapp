@@ -1,8 +1,4 @@
-LANGUAGE PYTHON
-RUNTIME_VERSION = '3.8'
 PACKAGES = ('pyuff','numpy')
-HANDLER = 'run'
-AS
 $$
 import streamlit as st
 import pyuff
