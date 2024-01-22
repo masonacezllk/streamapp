@@ -1,7 +1,7 @@
 PACKAGES = ('pyuff','numpy')
 
 import streamlit as st
-import pyuff
+import numpy
 
 col1, col2 = st.columns(2)
 
@@ -19,8 +19,4 @@ with col2:
       st.checkbox("坐垫")
       st.checkbox("地板")
 
-uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
-for uploaded_file in uploaded_files:
-    uff_file = pyuff.UFF(uploaded_file)
-    st.write("filename:", uploaded_file.name)
-    st.write(uff_file)
+
